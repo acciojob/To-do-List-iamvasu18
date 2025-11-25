@@ -5,11 +5,9 @@ const ol=document.getElementById("todoList");
 
 button.addEventListener("click",=>(){
 	const text = input.value.trim();
-    if (text === "") {
-        alert("Input is empty");
-        return;
-    }
+    if (!text) return; 
 	const list=document.createElement("li");
 	list.textContent=text;
-    ol.appendChild(list)
-})
+    ol.appendChild(list);
+	input.value = "";
+});
