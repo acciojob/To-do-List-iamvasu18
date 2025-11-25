@@ -6,8 +6,8 @@ const ol=document.getElementById("todoList");
 button.addEventListener("click", () =>{
 	const text = input.value.trim();
     if (!text) return; 
-	const list=document.createElement("li");
-	list.textContent=text;
-    ol.appendChild(list);
+	const li=document.createElement("li");
+	li.textContent=text;
+    ol.appendChild(li);
 	input.value = "";
 });
